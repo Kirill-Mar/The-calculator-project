@@ -68,7 +68,7 @@ public class Main {
             case "*":
                 return a * b;
             case "/":
-                if (b == 0) { // Проверка деления на ноль
+                if (b == 0) {
                     throw new ArithmeticException("Деление на ноль недопустимо");
                 }
                 return a / b;
@@ -78,6 +78,6 @@ public class Main {
     }
 
     private static boolean isInRange(int num) {
-        return num >= -10 && num <= 10;
+        return num >= 1 && num <= 10;
     }
 }
